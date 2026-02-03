@@ -1,0 +1,96 @@
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.svg-container {
+    width: 100vw;
+    overflow: visible;
+    min-height: 985px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.svg-container svg {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.svg-line {
+    z-index: 1;
+    position: relative;
+}
+
+.svg-line-duplicate {
+    transform: translateY(8px);
+    opacity: 0.6;
+}
+
+.mockup-float {
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.mockup-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 1.5s;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+}
+
+@keyframes gradientFlow1 {
+    0% { stop-color: #8DCDF7; }
+    50% { stop-color: #309BD5; }
+    100% { stop-color: #8DCDF7; }
+}
+@keyframes gradientFlow2 {
+    0% { stop-color: #309BD5; }
+    50% { stop-color: #8DCDF7; }
+    100% { stop-color: #309BD5; }
+}
+@keyframes gradientFlow3 {
+    0% { stop-color: #8DCDF7; }
+    50% { stop-color: #309BD5; }
+    100% { stop-color: #8DCDF7; }
+}
+@keyframes gradientFlow4 {
+    0% { stop-color: #309BD5; }
+    50% { stop-color: #8DCDF7; }
+    100% { stop-color: #309BD5; }
+}
+@keyframes gradientFlow5 {
+    0% { stop-color: #8DCDF7; }
+    50% { stop-color: #309BD5; }
+    100% { stop-color: #8DCDF7; }
+}
+
+.gradient-stop-1 { animation: gradientFlow1 3s ease-in-out infinite; }
+.gradient-stop-2 { animation: gradientFlow2 3s ease-in-out infinite 0.6s; }
+.gradient-stop-3 { animation: gradientFlow3 3s ease-in-out infinite 1.2s; }
+.gradient-stop-4 { animation: gradientFlow4 3s ease-in-out infinite 1.8s; }
+.gradient-stop-5 { animation: gradientFlow5 3s ease-in-out infinite 2.4s; }
+
+.svg-line path {
+    filter: drop-shadow(0 0 4px rgba(48, 155, 213, 0.3));
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(48, 155, 213, 0.3)); }
+    50% { filter: drop-shadow(0 0 8px rgba(48, 155, 213, 0.6)); }
+}
+

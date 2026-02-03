@@ -1,0 +1,29 @@
+.aboutWave {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    z-index: 0; /* abaixo do conteúdo, acima do fundo */
+    opacity: 1;
+}
+
+.aboutWave-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 14px 30px rgba(48, 155, 213, 0.14));
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aboutWave {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .aboutWave {
+        display: none;
+    }
+}
+

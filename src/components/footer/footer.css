@@ -1,0 +1,26 @@
+/* Links do footer: clean e responsivo */
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.86);
+  transition: opacity 180ms ease, transform 180ms ease;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.footerLink:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+.yby {
+ font-size: 18rem;
+ opacity: 0.10;
+}

@@ -1,0 +1,39 @@
+.planCardFrame {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 10px;
+ background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+}
+
+.planCardFrameActive {
+  border-color: var(--color-primary-dark);
+}
+
+.planCardFrame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.10;
+
+}
+
+.planCardRail {
+  position: absolute;
+  inset: 14px auto 14px 14px;
+  width: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, rgba(141, 205, 247, 1) 0%, rgba(48, 155, 213, 1) 100%);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.about-buttonPrimar-plans {
+  background-color: var(--color-primary-dark);
+}
+
+.about-buttonPrimar-plans:hover {
+  opacity: 0.96;
+}

@@ -1,0 +1,264 @@
+.aboutHero-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutHero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+        radial-gradient(900px 520px at 15% 35%, rgba(255, 255, 255, 0.24), transparent 60%),
+        radial-gradient(800px 520px at 85% 45%, rgba(255, 255, 255, 0.16), transparent 55%),
+        linear-gradient(135deg, rgba(141, 205, 247, 1) 0%, rgba(48, 155, 213, 1) 100%);
+}
+
+.aboutHero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.22;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.65) 1px, transparent 1px);
+    background-size: 26px 26px;
+    background-position: 0 0;
+    mix-blend-mode: soft-light;
+}
+
+.aboutHero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.aboutHero-left {
+    color: #ffffff;
+}
+
+.aboutHero-kickerRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    opacity: 0.95;
+}
+
+.aboutHero-kickerDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.aboutHero-kicker {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 300;
+}
+
+.aboutHero-title {
+    font-size: clamp(44px, 6vw, 82px);
+    line-height: 0.95;
+    font-weight: 800;
+    margin: 0;
+}
+
+.aboutHero-titleLight {
+    font-weight: 500;
+}
+
+.aboutHero-subtitle {
+    margin-top: 18px;
+    max-width: 560px;
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+.aboutHero-ctaRow {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.aboutHero-ctaPrimary {
+    background: rgba(255, 255, 255, 0.92);
+    color: rgba(48, 155, 213, 1);
+}
+
+.aboutHero-ctaSecondary {
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.aboutHero-stats {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 34px;
+}
+
+.aboutHero-statLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.aboutHero-statValue {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.aboutHero-right {
+    position: relative;
+    min-height: 420px;
+}
+
+.aboutHero-glow {
+    position: absolute;
+    inset: -40px;
+    background: radial-gradient(closest-side, rgba(255, 255, 255, 0.18), transparent 70%);
+    filter: blur(10px);
+    opacity: 0.9;
+}
+
+.aboutHero-mockupStack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutHero-monitor {
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    transform: rotate(2deg);
+    filter: drop-shadow(0 18px 45px rgba(15, 23, 42, 0.18));
+    opacity: 0.95;
+}
+
+.aboutHero-phone {
+    position: absolute;
+    right: 80px;
+    bottom: -10px;
+    transform: rotate(6deg);
+    filter: drop-shadow(0 18px 45px rgba(15, 23, 42, 0.18));
+}
+
+.aboutHero-phoneSecondary {
+    position: absolute;
+    right: 200px;
+    bottom: 10px;
+    transform: rotate(-3deg);
+    opacity: 0.55;
+    filter: drop-shadow(0 18px 45px rgba(15, 23, 42, 0.16));
+}
+
+.aboutHero-hint {
+    position: relative;
+    z-index: 1;
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.95);
+    opacity: 0.9;
+}
+
+.aboutHero-hintLine {
+    width: 64px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+}
+
+.aboutHero-hintText {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 500;
+}
+
+.aboutHero-typeCaret {
+    display: inline-block;
+    width: 2px;
+    height: 0.95em;
+    margin-left: 0.10em;
+    background: rgba(48, 155, 213, 0.9);
+    border-radius: 1px;
+    vertical-align: -0.08em;
+    animation: aboutHeroCaretBlink 1s steps(1, end) infinite;
+}
+
+.aboutHero-typeText {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+.aboutHero-typeActual {
+    display: inline-block;
+    white-space: pre;
+}
+
+@keyframes aboutHeroCaretBlink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aboutHero-typeCaret {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .aboutHero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .aboutHero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutHero-ctaRow {
+        justify-content: center;
+    }
+
+    .aboutHero-stats {
+        justify-content: center;
+    }
+
+    .aboutHero-right {
+        min-height: 360px;
+    }
+
+    .aboutHero-monitor {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+        width: min(560px, 92vw);
+    }
+
+    .aboutHero-phone,
+    .aboutHero-phoneSecondary {
+        display: none;
+    }
+}
+

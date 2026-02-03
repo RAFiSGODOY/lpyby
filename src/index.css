@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Esconder scrollbar mas manter funcionalidade de scroll */
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
